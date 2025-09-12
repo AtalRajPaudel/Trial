@@ -1,0 +1,186 @@
+/* Body background */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  
+  /* Flower background */
+  background-image: url('flowers.jpg'); /* replace with your image path */
+  background-size: cover;       /* makes image cover whole page */
+  background-repeat: no-repeat; /* prevent tiling */
+  background-position: center;  /* center the image */
+  
+  /* Keep the content centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  
+  /* Optional overlay for readability */
+  /*background-color: rgba(255,255,255,0.3); /* soft white overlay if needed */
+  /*background-blend-mode: lighten;*/
+}
+
+
+/* Letter container (white paper) */
+.letter-container {
+  background: #fffdf5; /* paper-like */
+  width: 90%;
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.9); /* subtle shadow */
+  border: 1px solid #e0dccc; /* soft beige border for paper feel */
+  position: relative;
+  background: rgba(255,255,255,0.7);
+
+  .letter-container::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  z-index: -1;
+}
+
+  /* Optional subtle line pattern to mimic paper */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 21px,
+    rgba(0,0,0,0.09) 26px
+  );
+  line-height: 1.8;
+}
+
+/* Header */
+.letter-container h2 {
+  text-align: center;
+  color: #cc0000; /* red header for love */
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  margin-bottom: -50px;
+}
+
+/* Paragraph text */
+.letter-container p {
+  font-size: 18px;
+  color: #003366; /* dark blue text */
+  white-space: pre-line; /* preserve line breaks */
+  text-indent: 40px; /* adds indentation at the start of each paragraph */
+  line-height: 1.8;
+  text-align : justify;
+  padding-right : 20px;
+  padding-left : 20px;
+}
+
+/* Back link */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #cc0000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #990000;
+}
+
+@media (max-width: 768px) {
+  .letter-container {
+    padding: 20px;
+  }
+  .letter-container p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-indent: 30px;
+  }
+  .letter-container h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* General button/box style */
+button, .choice-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #b81f66; /* default blue */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.2);
+  text-align: center;
+}
+
+/* Hover effect */
+button:hover, .choice-btn:hover {
+  background-color: #e6034e; /* lighter blue on hover */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 64, 128, 0.3);
+}
+
+/* Active / clicked effect */
+button:active, .choice-btn:active {
+  background-color: #ff0303; /* darker navy */
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.2);
+}
+
+/* Optional: Red variant for choice buttons (video/writings) */
+.choice-btn.red {
+  background-color: #cc0000;
+}
+
+.choice-btn.red:hover {
+  background-color: #990000;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(204,0,0,0.3);
+}
+
+.choice-btn.red:active {
+  background-color: #660000;
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(204,0,0,0.2);
+}
+
+/* General container for index/choice pages */
+.container {
+  background-color: #ffffff; /* white card */
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* subtle shadow to pop out */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for container */
+.container:hover {
+  transform: translateY(-5px); /* lifts slightly */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* stronger shadow */
+}
+
+#nameInput {
+  width: 80%;             /* takes the full width of the container */
+  padding: 15px 20px;      /* top/bottom 15px, left/right 20px */
+  font-size: 18px;         /* larger text for visibility */
+  border-radius: 12px;     /* rounded corners */
+  border: 1px solid #ccc;  /* subtle border */
+  box-sizing: border-box;  /* include padding in width */
+  margin-top: 15px;        /* spacing from elements above */
+}
