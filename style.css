@@ -159,15 +159,17 @@ button:active, .choice-btn:active {
 
 /* General container for index/choice pages */
 .container {
-  background-color: #ffffff; /* white card */
+  /* background-color: #ffffff; */  /* remove this */
+  background-color: rgba(255,255,255,0.8); /* optional semi-transparent */
   width: 90%;
-  max-width: 500px;
-  padding: 30px;
+  max-width: 700px; /* slightly bigger than video width */
+  padding: 20px;  /* less padding to hug video */
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* subtle shadow to pop out */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 /* Hover effect for container */
 .container:hover {
@@ -184,3 +186,4 @@ button:active, .choice-btn:active {
   box-sizing: border-box;  /* include padding in width */
   margin-top: 15px;        /* spacing from elements above */
 }
+
