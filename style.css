@@ -162,6 +162,7 @@ button:active, .choice-btn:active {
   /* background-color: #ffffff; */  /* remove this */
   background-color: rgba(255,255,255,0.8); /* optional semi-transparent */
   width: 90%;
+  max-width: 700px;
    /* slightly bigger than video width */
   padding: 20px;  /* less padding to hug video */
   border-radius: 15px;
@@ -186,5 +187,6 @@ button:active, .choice-btn:active {
   box-sizing: border-box;  /* include padding in width */
   margin-top: 15px;        /* spacing from elements above */
 }
+
 
 
