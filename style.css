@@ -188,8 +188,28 @@ button:active, .choice-btn:active {
   margin-top: 15px;        /* spacing from elements above */
 }
 
-.videoContainer{
+/* Video container */
+.videoContainer {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent card */
+  padding: 20px;           /* reduces extra space around video */
+  border-radius: 15px;     /* rounded corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* subtle shadow */
+  max-width: 680px;        /* slightly wider than video */
+  width: 90%;              /* responsive */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Make video iframe responsive */
+.videoContainer iframe {
+  width: 100%;             /* fills container width */
+  max-width: 640px;        /* do not exceed video width */
+  border-radius: 12px;     /* match container style */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle depth */
+}
+
 
 
 
