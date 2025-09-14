@@ -4,7 +4,7 @@ function checkName() {
   const errorMsg = document.getElementById("errorMsg");
 
   // Change "John" to the allowed name you want
-  const correctName = "John";
+  const correctName = "Fatah";
 
   if (input === correctName) {
     // Save the fact that user is allowed
@@ -25,3 +25,4 @@ function goTo(page) {
     window.location.href = "index.html";
   }
 }
+
