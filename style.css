@@ -26,7 +26,7 @@ body {
 .letter-container {
   background: #fffdf5; /* paper-like */
   width: 95%;
-  max-width: 1300px;
+  max-width: 900px;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.9); /* subtle shadow */
@@ -209,6 +209,7 @@ button:active, .choice-btn:active {
   border-radius: 12px;     /* match container style */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle depth */
 }
+
 
 
 
