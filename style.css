@@ -25,8 +25,8 @@ body {
 /* Letter container (white paper) */
 .letter-container {
   background: #fffdf5; /* paper-like */
-  width: 90%;
-  max-width: 700px;
+  width: 95%;
+  max-width: 800px;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.9); /* subtle shadow */
@@ -70,8 +70,8 @@ body {
   font-size: 18px;
   color: #003366; /* dark blue text */
   white-space: pre-line; /* preserve line breaks */
-  text-indent: 40px; /* adds indentation at the start of each paragraph */
-  line-height: 1.8;
+  text-indent: 20px; /* adds indentation at the start of each paragraph */
+  line-height: 1.4;
   text-align : justify;
   padding-right : 20px;
   padding-left : 20px;
@@ -209,6 +209,7 @@ button:active, .choice-btn:active {
   border-radius: 12px;     /* match container style */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle depth */
 }
+
 
 
 
