@@ -34,7 +34,17 @@ body {
   position: relative;
   background: rgba(255,255,255,0.7);
 
-  .letter-container::before {
+  /* Optional subtle line pattern to mimic paper */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 21px,
+    rgba(0,0,0,0.09) 26px
+  );
+  line-height: 1.8;
+}
+
+.letter-container::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -44,16 +54,6 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   z-index: -1;
-}
-
-  /* Optional subtle line pattern to mimic paper */
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 21px,
-    rgba(0,0,0,0.09) 26px
-  );
-  line-height: 1.8;
 }
 
 /* Header */
@@ -209,6 +209,7 @@ button:active, .choice-btn:active {
   border-radius: 12px;     /* match container style */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle depth */
 }
+
 
 
 
